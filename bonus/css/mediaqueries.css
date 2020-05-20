@@ -1,0 +1,95 @@
+/* media queries sotto i 420px */
+
+@media screen and (max-width: 420px) {
+
+ /* COMMON */
+
+  .row {
+    width: 100%;
+    margin-top: 0;
+    padding: 15px 0;
+  }
+
+  *{
+    font-size: 18px;
+  }
+
+  h1{
+    font-size: 28px;
+    margin: 0 auto 15px;
+  }
+
+  h3{
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+ /* allineamento colonne una sotto l'altra */
+
+  #steps .row>.left, #steps .row>.central, #steps .row>.right, #lezioni .row>.left, #lezioni .row>.right, #why .row>.first, #why .row>.second, #why .row>.third {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* ridimensionamento immagini */
+
+  #lezioni .row img {
+    display: inline-block;
+    height: auto;
+    width: 40%;
+  }
+
+
+  #steps .row img{
+    width: 30%;
+    height: auto;
+  }
+
+
+  #why .row img {
+    background-color: #428bca;
+    border-radius: 50%;
+    padding: 3%;
+    width: 20%;
+    height: auto;
+  }
+
+}
+
+
+/* media queries da 420 a 1000 px */
+
+@media screen and (min-width: 420px) and (max-width: 1100px){
+
+  .row {
+    width: 100%;
+  }
+
+  #lezioni .row img {
+    display: inline-block;
+    height: 140px;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    box-sizing: border-box;
+    padding: 0 1%;
+  }
+
+  #steps .row img{
+    width: 61%;
+    height: auto;
+  }
+
+
+  #why .row img {
+    background-color: #428bca;
+    border-radius: 50%;
+    padding: 3%;
+    width: 18%;
+    height: auto;
+  }
+
+
+}
